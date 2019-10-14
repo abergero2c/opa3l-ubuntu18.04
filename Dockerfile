@@ -5,4 +5,7 @@ RUN apt update && \
 	libsuperlu-dev libopenblas-dev sshpass zlib1g-dev \
 	clang-tidy clang libboost-all-dev wget valgrind python-yaml \
  && rm -rf /var/lib/apt/lists/*
+ wget http://download.qt.io/official_releases/qt/5.7/5.7.0/qt-opensource-linux-x64-5.7.0.run
+ chmod +x qt-opensource-linux-x64-5.7.0.run
+ ./qt-opensource-linux-x64-5.7.0.run
 ENV LANG en_US.utf-8
