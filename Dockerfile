@@ -6,6 +6,6 @@ RUN apt update && \
 	clang-tidy clang libboost-all-dev wget valgrind python-yaml \
  && rm -rf /var/lib/apt/lists/* && \
  wget http://download.qt.io/official_releases/qt/5.13/5.13.1/qt-opensource-linux-x64-5.13.1.run && \
- chmod +x qt-opensource-linux-x64-5.7.0.run && \
- ./qt-opensource-linux-x64-5.7.0.run
+ chmod +x qt-opensource-linux-x64-5.13.1.run && \
+ ./qt-opensource-linux-x64-5.13.1.run
 ENV LANG en_US.utf-8
