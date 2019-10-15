@@ -5,7 +5,7 @@ RUN apt update && \
 	libsuperlu-dev libopenblas-dev sshpass zlib1g-dev\
 	clang-tidy clang libboost-all-dev wget valgrind python-yaml \
  && rm -rf /var/lib/apt/lists/* && \
- apt-get install build-essential && apt-get install fontconfig && apt-get install mesa-common-dev && \
+ apt-get install build-essential && apt install fontconfig && apt-get install mesa-common-dev && \
  apt-get install libglu1-mesa-dev -y && \
  wget http://download.qt.io/official_releases/qt/5.13/5.13.1/qt-opensource-linux-x64-5.13.1.run && \
  chmod +x qt-opensource-linux-x64-5.13.1.run && \
