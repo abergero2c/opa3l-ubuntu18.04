@@ -6,7 +6,7 @@ RUN apt update && \
 	clang-tidy clang libboost-all-dev wget valgrind python-yaml \
  && rm -rf /var/lib/apt/lists/* 
 RUN apt-get update 
-RUN apt-get install unzip wget
+RUN apt install unzip
 
 ENV QT_VERSION_A=5.9
 ENV QT_VERSION_B=5.9.4
