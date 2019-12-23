@@ -5,7 +5,7 @@ RUN apt update && \
 	libsuperlu-dev libopenblas-dev sshpass zlib1g-dev\
 	clang-tidy clang libboost-all-dev wget valgrind python-yaml fontconfig \
  && rm -rf /var/lib/apt/lists/* 
-RUN - apt update && \
+RUN apt update && \
     apt install -y clang-8 clang-tidy-8
 RUN apt-get update && \
     apt-get install -y make g++ make qt5-qmake qt5-default openssh-client && \
