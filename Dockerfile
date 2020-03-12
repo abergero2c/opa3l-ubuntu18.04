@@ -17,4 +17,5 @@ RUN apt update && \
     curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
     apt-get -y install git-lfs && \
     git lfs install
+RUN apt update && apt -y install sqlite3 libsqlite3-dev
 ENV LANG en_US.utf-8
