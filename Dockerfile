@@ -3,7 +3,7 @@ RUN apt update && \
  apt install -y rpm2cpio cpio wget gfortran gcc ragel libssl-dev make cmake g++ git autogen \
 	pkg-config valgrind libboost-all-dev language-pack-en-base libboost-python-dev python3-dev \
 	libsuperlu-dev libopenblas-dev sshpass zlib1g-dev\
-	clang-tidy clang libboost-all-dev wget valgrind python-yaml fontconfig \
+	clang-tidy clang libboost-all-dev wget valgrind python-yaml fontconfig p7zip p7zip-rar p7zip-full\
  && rm -rf /var/lib/apt/lists/* 
 RUN apt update && \
     apt install -y clang-8 clang-tidy-8
@@ -18,4 +18,5 @@ RUN apt update && \
     apt-get -y install git-lfs && \
     git lfs install
 RUN apt update && apt -y install sqlite3 libsqlite3-dev
+RUN wget https://seafile.zfn.uni-bremen.de/f/7c30abafc57a419fb568/?dl=1 && 7z e *.7z
 ENV LANG en_US.utf-8
