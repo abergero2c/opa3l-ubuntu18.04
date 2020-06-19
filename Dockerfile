@@ -18,5 +18,5 @@ RUN apt update && \
     apt-get -y install git-lfs && \
     git lfs install
 RUN apt update && apt -y install sqlite3 libsqlite3-dev
-RUN wget https://seafile.zfn.uni-bremen.de/f/7c30abafc57a419fb568/?dl=1 && 7z e *.7z
+RUN wget -q -O protobuf.7z https://seafile.zfn.uni-bremen.de/f/7c30abafc57a419fb568/?dl=1 && 7z e protobuf.7z && ls
 ENV LANG en_US.utf-8
