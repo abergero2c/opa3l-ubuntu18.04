@@ -19,5 +19,5 @@ RUN apt update && \
     git lfs install
 RUN apt update && apt -y install sqlite3 libsqlite3-dev
 RUN wget -q -O protobuf.7z https://seafile.zfn.uni-bremen.de/f/7c30abafc57a419fb568/?dl=1 && mkdir protobuf && \
- 7z e protobuf.7z -o./protobuf -y
+ 7z x protobuf.7z -o./protobuf -y
 ENV LANG en_US.utf-8
